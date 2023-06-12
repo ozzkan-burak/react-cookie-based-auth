@@ -6,6 +6,10 @@ const RegisterPage = () => {
   const emailRef = useRef();
   const passRef = useRef();
 
+  const handleSubmit = (e) => {
+    
+  } 
+
   return (
     <>
       <h1 className="jumbotron rext-center bg-primary square">RegisterPage</h1>
