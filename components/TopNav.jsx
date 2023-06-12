@@ -2,23 +2,28 @@ import React from 'react';
 
 import { Menu } from 'antd';
 import Link from 'next/link'
+import {
+  AppstoreAddOutlined,
+  LoginOutlined,
+  UserAddOutlined,
+} from "@ant-design/icons";
 
 const { Item } = Menu;
 
 const TopNav = () => {
   return (
-    <Menu>
-     <Item>
+    <Menu mode="horizontal">
+     <Item icon={<AppstoreAddOutlined />}>
       <Link href="/">
         App
       </Link>
      </Item>
-     <Item>
+     <Item icon={<LoginOutlined />}>
       <Link href="/login">
         Login
       </Link>
      </Item>
-     <Item>
+     <Item icon={<UserAddOutlined />}>
       <Link href="/register">
         Register
       </Link>
