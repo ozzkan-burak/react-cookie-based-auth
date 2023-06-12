@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+
+import { Menu } from 'antd';
+import Link from 'next/link'
 
 const TopNav = () => {
   return (
