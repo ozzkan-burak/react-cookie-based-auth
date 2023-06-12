@@ -3,7 +3,7 @@ import React from 'react'
 const Index = () => {
   return (
     <>
-      <h1 className="jumbotron text-center bg-primary">Helloo world</h1>
+      <h1 className="jumbotron text-center bg-primary square">Helloo world</h1>
       <p></p>
     </>
   )
