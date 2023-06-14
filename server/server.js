@@ -11,5 +11,11 @@ app.use(morgan("dev"));
 
 
 app.get("/", (req, res) => {
-  res.send("Tour hit server endpoint");
+  res.send("Your hit server endpoint");
 });
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, ()=> {
+  console.log(`Server run on ${PORT}`)
+})
