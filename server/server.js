@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const fs = require("fs");
+const {readdirSync} = require("fs");
 const morgan = require("morgan");
 require("dotenv").config();
 
@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 
-fs.readdirSync("./routes").map((r) => 
+readdirSync("./routes").map((r) => 
   app.use("/api", require(`./routes/${r}`))
 );
 
